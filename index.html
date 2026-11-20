@@ -1,0 +1,1426 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>捷克街头系列51 | 城市影像品牌 - 官方原创纪实频道</title>
+<meta name="description" content="捷克街头系列51官方网站，深耕城市街头影像与在地文化记录的原创视频品牌，为创作者与观众搭建高品质内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2318222e'/%3E%3Cpath d='M20 22h24v14a8 8 0 0 1-8 8H28a8 8 0 0 1-8-8z' fill='%23e8b04b'/%3E%3Cpath d='M26 26l14 8-14 8z' fill='%2318222e'/%3E%3Crect x='16' y='48' width='32' height='4' rx='2' fill='%23c0563a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cz-ink:#18222e;
+  --cz-ink-2:#243243;
+  --cz-paper:#f4efe6;
+  --cz-paper-2:#eae2d4;
+  --cz-amber:#e8b04b;
+  --cz-rust:#c0563a;
+  --cz-slate:#4d6175;
+  --cz-line:rgba(24,34,46,.14);
+  --cz-shadow:0 18px 40px -22px rgba(24,34,46,.55);
+  --cz-radius:14px;
+  --cz-nav-h:64px;
+  --cz-bar-h:44px;
+  --cz-serif:"Georgia","Songti SC","Noto Serif SC",serif;
+  --cz-sans:"Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--cz-nav-h) + var(--cz-bar-h) + 12px)}
+body{
+  font-family:var(--cz-sans);
+  background:var(--cz-paper);
+  color:var(--cz-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.cz-wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ---------- 公告条 + 页头 吸顶 ---------- */
+.cz-sticky-head{position:sticky;top:0;z-index:60}
+.cz-annbar{
+  background:linear-gradient(90deg,var(--cz-ink) 0%,var(--cz-ink-2) 60%,#2e4157 100%);
+  color:#f2e7d2;font-size:.82rem;letter-spacing:.02em;
+  height:var(--cz-bar-h);display:flex;align-items:center;overflow:hidden;
+}
+.cz-annbar .cz-wrap{display:flex;align-items:center;gap:14px}
+.cz-annbar-tag{
+  flex:0 0 auto;background:var(--cz-amber);color:var(--cz-ink);
+  font-weight:700;font-size:.72rem;padding:2px 9px;border-radius:4px;letter-spacing:.08em;
+}
+.cz-annbar-track{flex:1 1 auto;overflow:hidden;white-space:nowrap;position:relative;height:100%}
+.cz-annbar-track ul{list-style:none;display:flex;gap:56px;align-items:center;height:100%;animation:cz-marquee 34s linear infinite}
+.cz-annbar-track li{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;opacity:.94}
+.cz-annbar-track li b{color:var(--cz-amber);font-weight:600}
+.cz-annbar:hover .cz-annbar-track ul{animation-play-state:paused}
+@keyframes cz-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.cz-header{
+  background:rgba(244,239,230,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--cz-line);
+  height:var(--cz-nav-h);
+}
+.cz-header .cz-wrap{display:flex;align-items:center;gap:22px;height:100%}
+.cz-logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.cz-logo-mark{
+  width:40px;height:40px;border-radius:11px;background:var(--cz-ink);
+  display:grid;place-items:center;position:relative;overflow:hidden;
+}
+.cz-logo-mark svg{width:22px;height:22px}
+.cz-logo-mark::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--cz-rust);
+}
+.cz-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.cz-logo-text strong{font-family:var(--cz-serif);font-size:1.05rem;letter-spacing:.02em}
+.cz-logo-text span{font-size:.66rem;letter-spacing:.16em;color:var(--cz-slate);text-transform:uppercase}
+
+.cz-nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.cz-nav a{
+  font-size:.88rem;padding:8px 13px;border-radius:8px;color:var(--cz-ink-2);
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.cz-nav a:hover{background:var(--cz-paper-2);color:var(--cz-ink)}
+.cz-nav a.is-current{color:var(--cz-rust);font-weight:600;position:relative}
+.cz-nav a.is-current::after{
+  content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;background:var(--cz-rust);border-radius:2px;
+}
+.cz-head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.cz-search{position:relative;display:flex;align-items:center}
+.cz-search input{
+  width:170px;padding:8px 34px 8px 12px;border-radius:20px;border:1px solid var(--cz-line);
+  background:#fff;font-size:.84rem;color:var(--cz-ink);outline:none;transition:width .25s,border-color .2s,box-shadow .2s;
+}
+.cz-search input:focus{width:230px;border-color:var(--cz-amber);box-shadow:0 0 0 3px rgba(232,176,75,.22)}
+.cz-search button{
+  position:absolute;right:4px;width:26px;height:26px;border-radius:50%;
+  display:grid;place-items:center;background:var(--cz-ink);color:var(--cz-paper);
+}
+.cz-search button svg{width:13px;height:13px}
+.cz-search-hint{
+  position:absolute;left:0;top:calc(100% + 8px);min-width:230px;background:#fff;border:1px solid var(--cz-line);
+  border-radius:10px;box-shadow:var(--cz-shadow);padding:10px 12px;font-size:.8rem;color:var(--cz-slate);
+  display:none;z-index:70;
+}
+.cz-search-hint.is-open{display:block}
+.cz-search-hint b{color:var(--cz-rust)}
+.cz-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:10px 20px;border-radius:24px;font-size:.86rem;font-weight:600;letter-spacing:.02em;
+  transition:transform .18s,box-shadow .2s,background .2s,color .2s;
+}
+.cz-btn:hover{transform:translateY(-2px)}
+.cz-btn-primary{background:var(--cz-ink);color:var(--cz-paper);box-shadow:0 10px 24px -14px rgba(24,34,46,.9)}
+.cz-btn-primary:hover{background:#0f1720}
+.cz-btn-amber{background:var(--cz-amber);color:var(--cz-ink)}
+.cz-btn-ghost{border:1.5px solid rgba(24,34,46,.35);color:var(--cz-ink)}
+.cz-btn-ghost:hover{border-color:var(--cz-ink);background:rgba(24,34,46,.05)}
+.cz-nav-toggle{display:none;width:40px;height:40px;border-radius:9px;border:1px solid var(--cz-line);align-items:center;justify-content:center;background:#fff}
+.cz-nav-toggle svg{width:20px;height:20px}
+
+/* ---------- 首屏 ---------- */
+.cz-hero{position:relative;padding:64px 0 78px;overflow:hidden;background:
+  radial-gradient(1200px 520px at 82% -10%,rgba(232,176,75,.30),transparent 62%),
+  radial-gradient(900px 480px at -10% 110%,rgba(192,86,58,.20),transparent 60%),
+  var(--cz-paper);}
+.cz-hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(var(--cz-line) 1px,transparent 1px),linear-gradient(90deg,var(--cz-line) 1px,transparent 1px);
+  background-size:78px 78px;mask-image:radial-gradient(circle at 50% 30%,#000 0%,transparent 72%);
+}
+.cz-hero-grid{position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.cz-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:.75rem;letter-spacing:.2em;color:var(--cz-rust);
+  font-weight:700;text-transform:uppercase;margin-bottom:18px;
+}
+.cz-eyebrow::before{content:"";width:30px;height:2px;background:var(--cz-rust)}
+.cz-hero h1{
+  font-family:var(--cz-serif);font-size:clamp(2.15rem,4.3vw,3.4rem);line-height:1.14;
+  letter-spacing:.01em;margin-bottom:16px;
+}
+.cz-hero h1 em{font-style:normal;color:var(--cz-rust);position:relative;white-space:nowrap}
+.cz-hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:9px;background:rgba(232,176,75,.5);z-index:-1;border-radius:3px}
+.cz-hero-sub{font-size:1.02rem;color:var(--cz-slate);max-width:31em;margin-bottom:20px}
+.cz-hero-desc{font-size:.94rem;color:#3a4a5c;max-width:34em;margin-bottom:26px}
+.cz-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.cz-hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--cz-line);padding-top:20px}
+.cz-hero-stats div strong{display:block;font-family:var(--cz-serif);font-size:1.65rem;color:var(--cz-ink);line-height:1.1}
+.cz-hero-stats div span{font-size:.78rem;color:var(--cz-slate);letter-spacing:.04em}
+
+.cz-hero-visual{position:relative}
+.cz-hero-frame{
+  position:relative;border-radius:18px;overflow:hidden;box-shadow:var(--cz-shadow);
+  border:6px solid #fff;background:#fff;transform:rotate(-1.1deg);
+}
+.cz-hero-frame img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.cz-hero-badge{
+  position:absolute;left:-14px;top:26px;background:var(--cz-ink);color:var(--cz-amber);
+  font-size:.72rem;letter-spacing:.14em;padding:7px 14px;border-radius:6px;font-weight:700;
+  box-shadow:0 10px 22px -12px rgba(24,34,46,.8);
+}
+.cz-hero-badge2{
+  position:absolute;right:-10px;bottom:-16px;background:#fff;border:1px solid var(--cz-line);
+  border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;box-shadow:var(--cz-shadow);
+}
+.cz-hero-badge2 .dot{width:9px;height:9px;border-radius:50%;background:var(--cz-rust);box-shadow:0 0 0 4px rgba(192,86,58,.18)}
+.cz-hero-badge2 small{display:block;font-size:.7rem;color:var(--cz-slate);letter-spacing:.1em}
+.cz-hero-badge2 b{font-size:.88rem}
+
+/* ---------- 通用 section ---------- */
+.cz-section{padding:70px 0}
+.cz-section-alt{background:var(--cz-paper-2)}
+.cz-section-ink{background:var(--cz-ink);color:#e9e2d6}
+.cz-sec-head{display:flex;align-items:flex-end;gap:20px;justify-content:space-between;margin-bottom:34px;flex-wrap:wrap}
+.cz-sec-head-l{max-width:44em}
+.cz-sec-kicker{font-size:.74rem;letter-spacing:.22em;color:var(--cz-rust);font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.cz-section-ink .cz-sec-kicker{color:var(--cz-amber)}
+.cz-sec-head h2{font-family:var(--cz-serif);font-size:clamp(1.5rem,2.6vw,2.05rem);line-height:1.28;letter-spacing:.01em}
+.cz-sec-head p{color:var(--cz-slate);font-size:.94rem;margin-top:8px}
+.cz-section-ink .cz-sec-head p{color:#a9b6c4}
+
+/* ---------- 品牌解析长文 ---------- */
+.cz-about{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.cz-about h3{font-family:var(--cz-serif);font-size:1.16rem;margin:0 0 10px;color:var(--cz-ink)}
+.cz-about p{font-size:.95rem;color:#3a4a5c;margin-bottom:16px;text-align:justify}
+.cz-about-quote{
+  border-left:4px solid var(--cz-amber);background:#fff;padding:20px 22px;border-radius:0 12px 12px 0;
+  font-family:var(--cz-serif);font-size:1rem;color:var(--cz-ink-2);line-height:1.85;box-shadow:var(--cz-shadow);margin-top:6px;
+}
+.cz-about-facts{display:grid;gap:12px;margin-top:22px}
+.cz-about-facts div{display:flex;gap:12px;align-items:flex-start;font-size:.9rem;color:#3a4a5c}
+.cz-about-facts b{flex:0 0 auto;width:64px;height:26px;border-radius:6px;background:var(--cz-paper-2);display:grid;place-items:center;font-size:.72rem;color:var(--cz-rust);letter-spacing:.05em}
+
+/* ---------- 焦点内容 ---------- */
+.cz-feature-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.cz-vcard{background:#fff;border-radius:var(--cz-radius);overflow:hidden;border:1px solid var(--cz-line);display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
+.cz-vcard:hover{transform:translateY(-4px);box-shadow:var(--cz-shadow)}
+.cz-vcard-media{position:relative;overflow:hidden;background:#d9d2c6}
+.cz-vcard-media img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .5s}
+.cz-vcard:hover .cz-vcard-media img{transform:scale(1.04)}
+.cz-vcard-tag{position:absolute;left:12px;top:12px;background:rgba(24,34,46,.82);color:var(--cz-amber);font-size:.7rem;letter-spacing:.1em;padding:4px 10px;border-radius:5px;font-weight:600;backdrop-filter:blur(4px)}
+.cz-vcard-play{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:opacity .25s;background:linear-gradient(180deg,transparent 40%,rgba(24,34,46,.55))}
+.cz-vcard:hover .cz-vcard-play{opacity:1}
+.cz-vcard-play span{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--cz-ink)}
+.cz-vcard-play svg{width:20px;height:20px;margin-left:3px}
+.cz-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cz-vcard-body h3{font-size:1.02rem;line-height:1.5;font-weight:700}
+.cz-vcard-body p{font-size:.86rem;color:var(--cz-slate);line-height:1.7}
+.cz-vcard-meta{display:flex;align-items:center;gap:10px;font-size:.76rem;color:#7a8896;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+.cz-vcard-meta .cz-avatar{width:22px;height:22px;font-size:.66rem}
+.cz-vcard-acts{display:flex;gap:8px;padding-top:10px;border-top:1px dashed var(--cz-line);margin-top:10px}
+.cz-ico-btn{display:inline-flex;align-items:center;gap:5px;font-size:.76rem;color:var(--cz-slate);padding:5px 10px;border-radius:16px;border:1px solid transparent;transition:background .18s,color .18s,border-color .18s}
+.cz-ico-btn:hover{background:var(--cz-paper);border-color:var(--cz-line);color:var(--cz-ink)}
+.cz-ico-btn svg{width:14px;height:14px}
+.cz-ico-btn.is-active{color:var(--cz-rust);border-color:rgba(192,86,58,.35);background:rgba(192,86,58,.07)}
+.cz-feature-main .cz-vcard-body h3{font-size:1.3rem}
+.cz-feature-main .cz-vcard-media img{aspect-ratio:16/8.4}
+.cz-feature-side{display:grid;grid-template-rows:repeat(2,1fr);gap:20px}
+.cz-vcard-sm{flex-direction:row}
+.cz-vcard-sm .cz-vcard-media{flex:0 0 42%}
+.cz-vcard-sm .cz-vcard-media img{aspect-ratio:16/11;height:100%}
+.cz-vcard-sm .cz-vcard-body{padding:13px 14px}
+.cz-vcard-sm .cz-vcard-body h3{font-size:.92rem}
+
+/* ---------- 视频流 ---------- */
+.cz-filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.cz-chip{font-size:.78rem;padding:6px 15px;border-radius:18px;border:1px solid var(--cz-line);background:#fff;color:var(--cz-slate);transition:all .18s}
+.cz-chip:hover{border-color:var(--cz-amber);color:var(--cz-ink)}
+.cz-chip.is-on{background:var(--cz-ink);color:var(--cz-amber);border-color:var(--cz-ink);font-weight:600}
+.cz-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cz-grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.cz-hidden{display:none !important}
+
+/* ---------- 专题 ---------- */
+.cz-topic-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cz-topic{position:relative;border-radius:var(--cz-radius);overflow:hidden;min-height:200px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff;border:1px solid var(--cz-line);transition:transform .22s}
+.cz-topic:hover{transform:translateY(-4px)}
+.cz-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,34,46,.05) 0%,rgba(24,34,46,.86) 100%);z-index:1}
+.cz-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cz-topic-body{position:relative;z-index:2}
+.cz-topic-state{display:inline-block;font-size:.68rem;letter-spacing:.1em;background:var(--cz-amber);color:var(--cz-ink);padding:3px 9px;border-radius:4px;font-weight:700;margin-bottom:8px}
+.cz-topic-body h3{font-size:1.02rem;margin-bottom:5px;line-height:1.45}
+.cz-topic-body p{font-size:.79rem;color:#cfd6de;line-height:1.6}
+
+/* ---------- 创作者 ---------- */
+.cz-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cz-creator{background:#fff;border:1px solid var(--cz-line);border-radius:var(--cz-radius);padding:20px 18px;display:flex;flex-direction:column;gap:10px;transition:transform .22s,box-shadow .22s;cursor:pointer}
+.cz-creator:hover{transform:translateY(-4px);box-shadow:var(--cz-shadow)}
+.cz-creator-top{display:flex;align-items:center;gap:12px}
+.cz-avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-family:var(--cz-serif);color:#fff;flex:0 0 auto;letter-spacing:.02em}
+.cz-creator-top b{font-size:.95rem}
+.cz-creator-top small{display:block;font-size:.73rem;color:var(--cz-slate)}
+.cz-creator p{font-size:.82rem;color:#4a5a6b;line-height:1.65}
+.cz-creator-stats{display:flex;gap:14px;font-size:.73rem;color:#7a8896;border-top:1px dashed var(--cz-line);padding-top:10px;margin-top:auto}
+.cz-creator-stats b{color:var(--cz-ink)}
+
+/* ---------- 工作墙 ---------- */
+.cz-wall{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:78px;gap:12px}
+.cz-wall figure{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--cz-line);background:#d9d2c6}
+.cz-wall img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cz-wall figure:hover img{transform:scale(1.05)}
+.cz-wall figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 12px 9px;font-size:.74rem;color:#fff;background:linear-gradient(180deg,transparent,rgba(24,34,46,.82))}
+.cz-wall .cz-w-a{grid-column:span 5;grid-row:span 3}
+.cz-wall .cz-w-b{grid-column:span 4;grid-row:span 2}
+.cz-wall .cz-w-c{grid-column:span 3;grid-row:span 2}
+.cz-wall .cz-w-d{grid-column:span 3;grid-row:span 3}
+.cz-wall .cz-w-e{grid-column:span 4;grid-row:span 3}
+.cz-wall .cz-w-f{grid-column:span 5;grid-row:span 2}
+.cz-wall .cz-w-g{grid-column:span 3;grid-row:span 2}
+.cz-wall .cz-w-h{grid-column:span 4;grid-row:span 2}
+
+/* ---------- 故事 ---------- */
+.cz-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cz-story{background:#fff;border-radius:var(--cz-radius);border:1px solid var(--cz-line);padding:22px;display:flex;flex-direction:column;gap:10px}
+.cz-story small{font-size:.72rem;letter-spacing:.14em;color:var(--cz-rust);font-weight:700}
+.cz-story h3{font-family:var(--cz-serif);font-size:1.06rem;line-height:1.5}
+.cz-story p{font-size:.86rem;color:#4a5a6b;line-height:1.78}
+.cz-story a{font-size:.8rem;color:var(--cz-rust);font-weight:600;margin-top:auto}
+
+/* ---------- 评论 ---------- */
+.cz-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cz-review{background:#fff;border:1px solid var(--cz-line);border-radius:var(--cz-radius);padding:18px;display:flex;flex-direction:column;gap:10px}
+.cz-review-head{display:flex;align-items:center;gap:10px}
+.cz-review-head b{font-size:.87rem}
+.cz-review-head small{font-size:.71rem;color:#8a96a3}
+.cz-review p{font-size:.85rem;color:#41505f;line-height:1.75}
+.cz-stars{color:var(--cz-amber);font-size:.8rem;letter-spacing:2px}
+.cz-review:nth-child(3n+2) .cz-stars{color:var(--cz-rust)}
+
+/* ---------- 榜单 ---------- */
+.cz-rank{background:#fff;border:1px solid var(--cz-line);border-radius:var(--cz-radius);overflow:hidden}
+.cz-rank-row{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--cz-line);transition:background .18s}
+.cz-rank-row:last-child{border-bottom:none}
+.cz-rank-row:hover{background:var(--cz-paper)}
+.cz-rank-no{font-family:var(--cz-serif);font-size:1.15rem;width:30px;color:var(--cz-slate);flex:0 0 auto}
+.cz-rank-row:nth-child(1) .cz-rank-no{color:var(--cz-rust)}
+.cz-rank-row:nth-child(2) .cz-rank-no,.cz-rank-row:nth-child(3) .cz-rank-no{color:var(--cz-amber)}
+.cz-rank-row b{font-size:.9rem;font-weight:600;flex:1 1 auto}
+.cz-rank-row span{font-size:.76rem;color:#8a96a3;flex:0 0 auto}
+
+/* ---------- 动态（时间线） ---------- */
+.cz-timeline{position:relative;padding-left:26px}
+.cz-timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--cz-amber),var(--cz-rust))}
+.cz-tl-item{position:relative;padding-bottom:24px}
+.cz-tl-item::before{content:"";position:absolute;left:-26px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--cz-paper);border:3px solid var(--cz-rust)}
+.cz-tl-item time{font-size:.72rem;letter-spacing:.1em;color:var(--cz-rust);font-weight:700}
+.cz-tl-item h3{font-size:.97rem;margin:4px 0}
+.cz-tl-item p{font-size:.84rem;color:#4a5a6b}
+
+/* ---------- FAQ ---------- */
+.cz-faq{display:grid;gap:10px;max-width:900px}
+.cz-faq details{background:#fff;border:1px solid var(--cz-line);border-radius:10px;padding:0 18px;transition:box-shadow .2s}
+.cz-faq details[open]{box-shadow:var(--cz-shadow)}
+.cz-faq summary{
+  list-style:none;cursor:pointer;padding:15px 30px 15px 0;font-size:.93rem;font-weight:600;position:relative;
+}
+.cz-faq summary::-webkit-details-marker{display:none}
+.cz-faq summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:1.2rem;color:var(--cz-rust);font-weight:400;transition:transform .2s;
+}
+.cz-faq details[open] summary::after{content:"−"}
+.cz-faq details p{font-size:.86rem;color:#4a5a6b;padding:0 0 16px;line-height:1.8}
+
+/* ---------- 合作品牌 ---------- */
+.cz-partners{display:flex;flex-wrap:wrap;gap:12px}
+.cz-partner{
+  flex:1 1 150px;min-width:130px;text-align:center;padding:18px 12px;border-radius:10px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);font-size:.86rem;letter-spacing:.04em;
+  color:#cfd8e2;transition:background .2s,color .2s;
+}
+.cz-partner:hover{background:rgba(232,176,75,.16);color:var(--cz-amber)}
+.cz-partner small{display:block;font-size:.68rem;color:#8fa0b1;margin-top:3px;letter-spacing:.1em}
+
+/* ---------- 联系 CTA ---------- */
+.cz-cta{
+  display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;
+  background:linear-gradient(120deg,#fff 0%,#fbf5e9 100%);
+  border:1px solid var(--cz-line);border-radius:18px;padding:38px;box-shadow:var(--cz-shadow);
+}
+.cz-cta h2{font-family:var(--cz-serif);font-size:1.7rem;line-height:1.3;margin-bottom:10px}
+.cz-cta p{font-size:.92rem;color:#4a5a6b;margin-bottom:18px}
+.cz-cta-actions{display:flex;flex-wrap:wrap;gap:10px}
+.cz-cta-info{display:grid;gap:10px;font-size:.86rem;color:#3a4a5c;border-left:1px solid var(--cz-line);padding-left:26px}
+.cz-cta-info div{display:flex;gap:10px}
+.cz-cta-info b{color:var(--cz-slate);font-weight:600;flex:0 0 60px}
+
+/* ---------- 页脚 ---------- */
+.cz-footer{background:#111a23;color:#9fb0c0;padding:56px 0 26px;font-size:.85rem}
+.cz-footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.1)}
+.cz-footer-brand strong{display:block;font-family:var(--cz-serif);color:#eee5d5;font-size:1.15rem;margin-bottom:10px}
+.cz-footer-brand p{line-height:1.8;color:#8394a5;max-width:26em}
+.cz-footer h4{color:#e5dccb;font-size:.85rem;letter-spacing:.1em;margin-bottom:14px;font-weight:600}
+.cz-footer ul{list-style:none;display:grid;gap:8px}
+.cz-footer ul a{color:#8fa0b1;transition:color .18s}
+.cz-footer ul a:hover{color:var(--cz-amber)}
+.cz-footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:20px;font-size:.76rem;color:#6f8092}
+.cz-footer-bottom span{display:inline-block;margin-right:14px}
+
+/* ---------- 回到顶部 & Toast & 模态 ---------- */
+.cz-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;background:var(--cz-ink);color:var(--cz-amber);
+  display:grid;place-items:center;box-shadow:var(--cz-shadow);opacity:0;pointer-events:none;transform:translateY(10px);
+  transition:opacity .25s,transform .25s;z-index:80;
+}
+.cz-top.is-show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.cz-top svg{width:18px;height:18px}
+.cz-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--cz-ink);color:var(--cz-amber);
+  padding:10px 20px;border-radius:24px;font-size:.84rem;box-shadow:var(--cz-shadow);opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;z-index:90;max-width:86vw;text-align:center;
+}
+.cz-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.cz-modal{position:fixed;inset:0;background:rgba(15,23,32,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.cz-modal.is-open{display:flex}
+.cz-modal-card{background:#fff;border-radius:16px;max-width:440px;width:100%;padding:26px;box-shadow:0 30px 60px -24px rgba(0,0,0,.5);position:relative;animation:cz-pop .22s ease-out}
+@keyframes cz-pop{from{transform:scale(.96);opacity:.6}to{transform:scale(1);opacity:1}}
+.cz-modal-card h3{font-family:var(--cz-serif);font-size:1.2rem;margin-bottom:8px}
+.cz-modal-card p{font-size:.87rem;color:#4a5a6b;margin-bottom:14px}
+.cz-modal-card textarea,.cz-modal-card input{
+  width:100%;border:1px solid var(--cz-line);border-radius:8px;padding:10px 12px;font-size:.86rem;font-family:inherit;
+  margin-bottom:10px;outline:none;resize:vertical;background:var(--cz-paper);
+}
+.cz-modal-card textarea:focus,.cz-modal-card input:focus{border-color:var(--cz-amber);background:#fff}
+.cz-modal-close{position:absolute;right:14px;top:12px;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;color:var(--cz-slate);font-size:1.1rem}
+.cz-modal-close:hover{background:var(--cz-paper);color:var(--cz-ink)}
+.cz-share-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.cz-share-row button{flex:1 1 90px;padding:9px 0;border-radius:8px;background:var(--cz-paper);font-size:.82rem;color:var(--cz-ink);transition:background .18s}
+.cz-share-row button:hover{background:var(--cz-amber)}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:1024px){
+  .cz-hero-grid{grid-template-columns:1fr;gap:38px}
+  .cz-feature-grid{grid-template-columns:1fr}
+  .cz-feature-side{grid-template-rows:none;grid-template-columns:1fr 1fr}
+  .cz-grid-3{grid-template-columns:repeat(2,1fr)}
+  .cz-creators{grid-template-columns:repeat(2,1fr)}
+  .cz-topic-list{grid-template-columns:repeat(2,1fr)}
+  .cz-reviews{grid-template-columns:repeat(2,1fr)}
+  .cz-story-grid{grid-template-columns:repeat(2,1fr)}
+  .cz-about{grid-template-columns:1fr}
+  .cz-footer-top{grid-template-columns:1fr 1fr}
+  .cz-cta{grid-template-columns:1fr;padding:28px}
+  .cz-cta-info{border-left:none;padding-left:0;border-top:1px solid var(--cz-line);padding-top:18px}
+}
+@media(max-width:780px){
+  .cz-nav{position:absolute;left:0;right:0;top:calc(var(--cz-nav-h));background:#fff;border-bottom:1px solid var(--cz-line);
+    flex-direction:column;align-items:stretch;padding:10px 4vw 16px;gap:2px;display:none;box-shadow:var(--cz-shadow)}
+  .cz-nav.is-open{display:flex}
+  .cz-nav a{padding:11px 14px}
+  .cz-nav a.is-current::after{display:none}
+  .cz-nav-toggle{display:flex}
+  .cz-head-tools{margin-left:auto}
+  .cz-search input{width:130px}
+  .cz-search input:focus{width:170px}
+  .cz-hero{padding:44px 0 56px}
+  .cz-grid-3,.cz-grid-2,.cz-feature-side,.cz-topic-list,.cz-creators,.cz-reviews,.cz-story-grid{grid-template-columns:1fr}
+  .cz-wall{grid-template-columns:repeat(6,1fr);grid-auto-rows:66px}
+  .cz-wall .cz-w-a,.cz-wall .cz-w-b,.cz-wall .cz-w-c,.cz-wall .cz-w-d,.cz-wall .cz-w-e,.cz-wall .cz-w-f,.cz-wall .cz-w-g,.cz-wall .cz-w-h{grid-column:span 3;grid-row:span 2}
+  .cz-hero-stats{grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .cz-hero-stats div strong{font-size:1.25rem}
+  .cz-section{padding:50px 0}
+  .cz-vcard-sm{flex-direction:column}
+  .cz-vcard-sm .cz-vcard-media{flex:0 0 auto}
+  .cz-footer-top{grid-template-columns:1fr}
+  .cz-header .cz-btn-primary{display:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="cz-sticky-head">
+  <div class="cz-annbar" role="note" aria-label="最新公告">
+    <div class="cz-wrap">
+      <span class="cz-annbar-tag">官方发布</span>
+      <div class="cz-annbar-track">
+        <ul>
+          <li><b>11-18 新增</b> 捷克街头系列51・布拉格老城清晨步行影像第 4 集上线</li>
+          <li><b>11-16 更新</b> 专题企划「石巷与电车」开放联合投稿报名</li>
+          <li><b>11-13 上新</b> 创作者「伏尔塔瓦的低机位」入驻，首发 3 条城市声景短片</li>
+          <li><b>11-18 新增</b> 捷克街头系列51・布拉格老城清晨步行影像第 4 集上线</li>
+          <li><b>11-16 更新</b> 专题企划「石巷与电车」开放联合投稿报名</li>
+          <li><b>11-13 上新</b> 创作者「伏尔塔瓦的低机位」入驻，首发 3 条城市声景短片</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="cz-header">
+    <div class="cz-wrap">
+      <a class="cz-logo" href="#cz-top-anchor" aria-label="捷克街头系列51 官方网站首页">
+        <span class="cz-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 7h10v6a5 5 0 0 1-5 5H9a3 3 0 0 1-3-3V7Z" fill="#e8b04b"/><path d="m10 10 5 3-5 3v-6Z" fill="#18222e"/></svg>
+        </span>
+        <span class="cz-logo-text">
+          <strong>捷克街头系列51</strong>
+          <span>Street CZ · Official</span>
+        </span>
+      </a>
+
+      <nav class="cz-nav" id="cz-main-nav" aria-label="主导航">
+        <a href="#cz-top-anchor" class="is-current">首页</a>
+        <a href="#cz-focus">焦点影像</a>
+        <a href="#cz-topics">专题企划</a>
+        <a href="#cz-creators">创作者</a>
+        <a href="#cz-updates">企业动态</a>
+        <a href="#cz-faq">帮助</a>
+        <a href="#cz-contact">联系投稿</a>
+      </nav>
+
+      <div class="cz-head-tools">
+        <div class="cz-search">
+          <input type="text" id="cz-search-input" placeholder="搜索街头影像 / 创作者" aria-label="站内搜索">
+          <button type="button" id="cz-search-btn" aria-label="执行搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+          </button>
+          <div class="cz-search-hint" id="cz-search-hint"></div>
+        </div>
+        <a class="cz-btn cz-btn-primary" href="#cz-contact">投稿入口</a>
+        <button class="cz-nav-toggle" id="cz-nav-toggle" aria-label="展开导航菜单" aria-expanded="false" aria-controls="cz-main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="cz-top-anchor">
+
+  <!-- 首屏 -->
+  <section class="cz-hero" aria-labelledby="cz-hero-title">
+    <div class="cz-wrap cz-hero-grid">
+      <div>
+        <span class="cz-eyebrow">CZECH STREET · OFFICIAL MEDIA</span>
+        <h1 id="cz-hero-title">捷克街头系列51<em>官方网站</em></h1>
+        <p class="cz-hero-sub">以街道为取景框，记录中欧城市日常的真实纹理与人间温度。</p>
+        <p class="cz-hero-desc">捷克街头系列51 是一个专注城市街头影像的原创视频品牌。我们长期深耕布拉格、布尔诺、克鲁姆洛夫等城市的街巷与广场，用固定机位、步行长镜头与现场收音，把擦肩而过的生活片段整理成可被反复观看的影像档案，为创作者与观众搭建值得信赖的内容生态。</p>
+        <div class="cz-hero-actions">
+          <a class="cz-btn cz-btn-amber" href="#cz-focus">浏览焦点影像</a>
+          <a class="cz-btn cz-btn-ghost" href="#cz-about-anchor">了解品牌故事</a>
+        </div>
+        <div class="cz-hero-stats">
+          <div><strong data-cz-count="1280">1280</strong><span>原创影像片段</span></div>
+          <div><strong data-cz-count="46">46</strong><span>合作创作者</span></div>
+          <div><strong data-cz-count="96">96</strong><span>城市街巷覆盖</span></div>
+        </div>
+      </div>
+      <div class="cz-hero-visual">
+        <span class="cz-hero-badge">SERIES 51</span>
+        <figure class="cz-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%23e8dcc6'/%3E%3Crect y='300' width='800' height='200' fill='%23c9b491'/%3E%3Cpath d='M0 300h800' stroke='%238a7a5e' stroke-width='3'/%3E%3Crect x='70' y='120' width='120' height='180' fill='%23e0d2b6' stroke='%238a7a5e' stroke-width='2'/%3E%3Crect x='250' y='80' width='150' height='220' fill='%23d7c6a5' stroke='%238a7a5e' stroke-width='2'/%3E%3Cpath d='M250 80l75-46 75 46z' fill='%23a8563c'/%3E%3Crect x='460' y='150' width='110' height='150' fill='%23e2d4b8' stroke='%238a7a5e' stroke-width='2'/%3E%3Crect x='620' y='100' width='130' height='200' fill='%23d4c19c' stroke='%238a7a5e' stroke-width='2'/%3E%3Cpath d='M620 100l65-40 65 40z' fill='%235c6f80'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='285' y='130' width='26' height='36'/%3E%3Crect x='330' y='130' width='26' height='36'/%3E%3Crect x='285' y='200' width='26' height='36'/%3E%3Crect x='330' y='200' width='26' height='36'/%3E%3C/g%3E%3Cpath d='M120 440q60-70 140-30t150-10 160 20' stroke='%236b5c43' stroke-width='4' fill='none'/%3E%3Cpath d='M360 420l40 40' stroke='%235c6f80' stroke-width='6'/%3E%3Ccircle cx='640' cy='420' r='18' fill='%23a8563c'/%3E%3C/svg%3E" alt="捷克街头系列51 布拉格老城石巷与红瓦屋顶的清晨街景摄影">
+        </figure>
+        <div class="cz-hero-badge2">
+          <span class="dot" aria-hidden="true"></span>
+          <div><small>本期主打</small><b>老城清晨・步行长镜头</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解析 -->
+  <section class="cz-section" id="cz-about-anchor" aria-labelledby="cz-about-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Brand Story · 品牌解析</div>
+          <h2 id="cz-about-title">为什么是街头：捷克街头系列51 的定位与解析</h2>
+          <p>用一支支短片解释一件事——城市的秩序写在街道上，而街道的温度藏在人的行走里。</p>
+        </div>
+      </div>
+      <div class="cz-about">
+        <div>
+          <h3>一个从电车窗口开始的品牌</h3>
+          <p>捷克街头系列51 的起点并不宏大。创始人第一次抵达布拉格时，在 22 路电车的窗口拍下了一段 47 秒的画面：雨后的石块路反光，一位老人提着面包袋穿过斑马线，电车叮声压过教堂钟声。那段素材从未剪辑，却在团队内部被反复播放。后来我们意识到，真正打动人的不是异国风景，而是那些来不及解释就被生活继续推进的瞬间。</p>
+          <p>于是这个系列有了名字。数字 51 来自拍摄者当天的门牌号，也像一个提醒——街头的故事从不停在整点，它总在缝隙里发生。作为深耕城市影像垂直领域的原创视频品牌，我们坚持以真实为第一原则：不摆拍，不预演，不为了镜头而打断生活。镜头放在人行道边、长椅旁、地铁出口的台阶上，我们只是耐心等待。</p>
+          <h3>我们如何定义“值得看”</h3>
+          <p>在信息过载的当下，一段视频值得被看完，往往因为它提供了具体的、可辨认的真实感。捷克街头系列51 的选片标准有三条：画面里必须有人的动作，声音里必须有现场环境，叙事里必须有一处让人愿意停下来的细节。它可能是一声迟到的问候，可能是橱窗里换季的陈设，也可能是老式电车轨道上的一小片落叶。</p>
+          <p>围绕这三条标准，我们持续与本地创作者、留学生、独立摄影师合作，形成以城市探索、在地文化、创作幕后为核心的内容生态。品牌官网的每一帧封面、每一段文字说明，都由编辑团队与作者共同校对，确保名称、地点、时间与影像信息一致，这也是我们所说的“正版与品质”的具体含义。</p>
+          <div class="cz-about-quote">街头不是布景，是别人的生活。我们唯一做的，是不打扰地把它保存下来，再交还给愿意观看的人。</div>
+        </div>
+        <div>
+          <h3>从内容到社区：持续运营的三层结构</h3>
+          <p>捷克街头系列51 并不只是一条视频合集，它由三层结构支撑：第一层是影像档案库，按城市、街巷、时间、主题四个维度归档；第二层是创作者社区，为投稿者提供拍摄规范、声音采集建议与版权说明；第三层是专题企划，每年围绕不同城市议题组织联合拍摄与线上展映。</p>
+          <p>我们相信企业级内容平台的价值，不在于数量堆叠，而在于持续运营的稳定性。因此官网保持每周两次的内容更新节奏，企业动态与更新日志同步公开，所有已完成与进行中的企划都可以被追溯。对观众而言，这意味着可预期的品质；对创作者而言，这意味着值得信赖的合作关系。</p>
+          <p>在内容形态上，我们同时保留长镜头与短片段：前者用于城市漫步与在地文化记录，后者适合单点瞬间与声景切片。两种形态互为补充，使品牌既保持纪录片的耐心，也具备社区平台的活跃度。</p>
+          <div class="cz-about-facts">
+            <div><b>定位</b><span>城市街头影像原创视频品牌，专注中欧在地文化记录。</span></div>
+            <div><b>原则</b><span>真实优先、现场收音、作者署名、版权清晰、持续运营。</span></div>
+            <div><b>形态</b><span>长镜头城市漫步 + 短片段声景切片 + 专题联合企划。</span></div>
+            <div><b>社区</b><span>46 位合作创作者，开放投稿、评审与季度展映机制。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="cz-section cz-section-alt" id="cz-focus" aria-labelledby="cz-focus-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Featured · 焦点影像</div>
+          <h2 id="cz-focus-title">本期焦点：捷克街头系列51 的六段街头切片</h2>
+          <p>由编辑团队从近两周投稿中选出，兼顾画面、声音与叙事完整度。</p>
+        </div>
+        <button class="cz-btn cz-btn-ghost" type="button" data-cz-share="捷克街头系列51 · 焦点影像">分享本期专题</button>
+      </div>
+
+      <div class="cz-feature-grid">
+        <article class="cz-vcard cz-feature-main">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 420'%3E%3Crect width='800' height='420' fill='%232b3b4d'/%3E%3Ccircle cx='650' cy='90' r='52' fill='%23e8b04b' opacity='.85'/%3E%3Cpath d='M0 300h800v120H0z' fill='%231e2b39'/%3E%3Cpath d='M0 300h800' stroke='%23e8b04b' stroke-width='2' opacity='.6'/%3E%3Cg stroke='%23e8b04b' stroke-width='2' opacity='.5'%3E%3Cpath d='M80 300v-90M220 300v-120M360 300v-70M500 300v-110M640 300v-85M780 300v-130'/%3E%3C/g%3E%3Cg fill='%23e8b04b' opacity='.9'%3E%3Ccircle cx='80' cy='210' r='5'/%3E%3Ccircle cx='220' cy='180' r='5'/%3E%3Ccircle cx='360' cy='230' r='5'/%3E%3Ccircle cx='500' cy='190' r='5'/%3E%3Ccircle cx='640' cy='215' r='5'/%3E%3Ccircle cx='780' cy='170' r='5'/%3E%3C/g%3E%3Cpath d='M120 300q40-46 90-20t100-8 110 16 120-24' stroke='%23c0563a' stroke-width='5' fill='none'/%3E%3Crect x='0' y='0' width='800' height='420' fill='url(%23g)'/%3E%3C/svg%3E" alt="夜色中电车轨道与灯串延伸的布拉格街口长镜头封面">
+            <span class="cz-vcard-tag">长镜头 · 城市漫步</span>
+            <span class="cz-vcard-play" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>从查理桥到小城区：一段 14 分钟的雨夜步行</h3>
+            <p>拍摄者把机器挂在胸前，沿伏尔塔瓦河左岸一路向南。雨落在石块路上的声音被完整保留，中间没有任何配乐。第 9 分钟，一位街头手风琴手加入了画面，成为这段影像里唯一的“意外主角”。</p>
+            <div class="cz-vcard-meta">
+              <span class="cz-avatar" style="background:#c0563a">伏</span>
+              <span>伏尔塔瓦的低机位</span><span>·</span><span>11-18</span><span>·</span><span>1.8 万次浏览</span>
+            </div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3Zm0 0 4-8a2 2 0 0 1 3 2l-1 5h5a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17 22H7"/></svg><span>赞 956</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.5-7 9-7 9Z"/></svg><span>收藏</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-share="从查理桥到小城区：一段 14 分钟的雨夜步行"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v7h16v-7M12 3v12M8 7l4-4 4 4"/></svg><span>分享</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-comment="从查理桥到小城区">评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="cz-feature-side">
+          <article class="cz-vcard cz-vcard-sm">
+            <div class="cz-vcard-media">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23efe4cf'/%3E%3Crect x='40' y='60' width='90' height='160' fill='%23d9c4a0' stroke='%238a7a5e' stroke-width='2'/%3E%3Crect x='170' y='30' width='110' height='190' fill='%23cbb48c' stroke='%238a7a5e' stroke-width='2'/%3E%3Cpath d='M170 30l55-28 55 28z' fill='%23a8563c'/%3E%3Crect x='310' y='90' width='60' height='130' fill='%23e3d3b4' stroke='%238a7a5e' stroke-width='2'/%3E%3Crect y='220' width='400' height='60' fill='%23b9a67f'/%3E%3Ccircle cx='220' cy='250' r='16' fill='%235c6f80'/%3E%3Cpath d='M60 250h120' stroke='%236b5c43' stroke-width='3'/%3E%3C/svg%3E" alt="克鲁姆洛夫石板街角挂满手写招牌的午后街景封面">
+              <span class="cz-vcard-tag">在地文化</span>
+            </div>
+            <div class="cz-vcard-body">
+              <h3>石板街拐角的十二块手写招牌</h3>
+              <p>一家开了三十七年的钟表店，招牌被雨水泡出毛边。</p>
+              <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#5c6f80">钟</span><span>石巷观察员</span><span>·</span><span>11-17</span></div>
+              <div class="cz-vcard-acts">
+                <button class="cz-ico-btn" type="button" data-cz-like="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3Zm0 0 4-8a2 2 0 0 1 3 2l-1 5h5a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17 22H7"/></svg><span>赞 412</span></button>
+                <button class="cz-ico-btn" type="button" data-cz-share="石板街拐角的十二块手写招牌"><span>分享</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cz-vcard cz-vcard-sm">
+            <div class="cz-vcard-media">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23243243'/%3E%3Crect x='30' y='40' width='340' height='180' rx='6' fill='%2318222e' stroke='%23e8b04b' stroke-width='2' opacity='.8'/%3E%3Cpath d='M30 150h340' stroke='%23e8b04b' stroke-width='1.6' opacity='.5'/%3E%3Cg fill='%23e8b04b'%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='200' cy='170' r='8'/%3E%3Ccircle cx='300' cy='110' r='12'/%3E%3C/g%3E%3Cg stroke='%23c0563a' stroke-width='3' opacity='.85'%3E%3Cpath d='M60 220q60-24 120 0t120-16'/%3E%3C/g%3E%3Crect y='240' width='400' height='40' fill='%23111a23'/%3E%3C/svg%3E" alt="布尔诺地下街区夜间灯光与步道声景短片封面">
+              <span class="cz-vcard-tag">声景切片</span>
+            </div>
+            <div class="cz-vcard-body">
+              <h3>布尔诺地下街区的 60 秒环境声</h3>
+              <p>风机、脚步、远处电车的刹车声，构成一条街的呼吸。</p>
+              <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#e8b04b;color:#18222e">声</span><span>声景采集组</span><span>·</span><span>11-15</span></div>
+              <div class="cz-vcard-acts">
+                <button class="cz-ico-btn" type="button" data-cz-like="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9h3Zm0 0 4-8a2 2 0 0 1 3 2l-1 5h5a2 2 0 0 1 2 2.3l-1.2 6A2 2 0 0 1 17 22H7"/></svg><span>赞 327</span></button>
+                <button class="cz-ico-btn" type="button" data-cz-share="布尔诺地下街区的 60 秒环境声"><span>分享</span></button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="cz-section" id="cz-videos" aria-labelledby="cz-videos-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Community Stream · 热门视频流</div>
+          <h2 id="cz-videos-title">社区正在记录：捷克街头系列51 本周热度</h2>
+          <p>按标签筛选，快速找到你关心的城市与题材。</p>
+        </div>
+      </div>
+
+      <div class="cz-filter-row" id="cz-filter-row" role="group" aria-label="视频标签筛选">
+        <button class="cz-chip is-on" type="button" data-cz-filter="all">全部</button>
+        <button class="cz-chip" type="button" data-cz-filter="city">城市探索</button>
+        <button class="cz-chip" type="button" data-cz-filter="culture">在地文化</button>
+        <button class="cz-chip" type="button" data-cz-filter="behind">创作幕后</button>
+        <button class="cz-chip" type="button" data-cz-filter="skill">实用技巧</button>
+      </div>
+
+      <div class="cz-grid-3" id="cz-video-grid">
+        <article class="cz-vcard" data-cz-cat="city">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23dfe6ea'/%3E%3Cpath d='M0 190h480v80H0z' fill='%23aebfc9'/%3E%3Cg stroke='%235c6f80' stroke-width='3' fill='none'%3E%3Cpath d='M60 190v-70l60-30 60 30v70'/%3E%3Cpath d='M200 190v-50h70v50'/%3E%3Cpath d='M300 190v-90l50-24 50 24v90'/%3E%3C/g%3E%3Cpath d='M40 250q80-40 160-8t240-24' stroke='%23c0563a' stroke-width='4' fill='none'/%3E%3Ccircle cx='410' cy='60' r='30' fill='%23e8b04b'/%3E%3C/svg%3E" alt="布拉格老城广场清晨游客稀少时的全景镜头封面">
+            <span class="cz-vcard-tag">城市探索</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>早上六点四十的老城广场，只有鸽子和送货车</h3>
+            <p>避开人流的正确方式，是把闹钟调到天亮之前。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#4d6175">晨</span><span>凌晨四点的取景器</span><span>·</span><span>2.1 万</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 1203</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard" data-cz-cat="culture">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f0e6d2'/%3E%3Crect x='50' y='50' width='380' height='170' fill='%23fff8ec' stroke='%23a8563c' stroke-width='3'/%3E%3Cg fill='%23a8563c'%3E%3Ccircle cx='120' cy='100' r='14'/%3E%3Ccircle cx='180' cy='130' r='10'/%3E%3Ccircle cx='250' cy='95' r='16'/%3E%3Ccircle cx='330' cy='140' r='12'/%3E%3C/g%3E%3Cg stroke='%235c6f80' stroke-width='2'%3E%3Cpath d='M90 180h300'/%3E%3Cpath d='M110 160v40M200 160v40M300 160v40M370 160v40'/%3E%3C/g%3E%3C/svg%3E" alt="捷克传统木偶工坊内手作艺人制作木偶的纪实封面">
+            <span class="cz-vcard-tag">在地文化</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>木偶工坊里的第七代手艺人与他的颜料盒</h3>
+            <p>他说颜料要调到像老墙一样旧，木偶才算活过来。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#a8563c">偶</span><span>手作档案室</span><span>·</span><span>1.6 万</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 874</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-share="木偶工坊里的第七代手艺人"><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard" data-cz-cat="behind">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2318222e'/%3E%3Crect x='70' y='60' width='160' height='110' rx='8' fill='%232b3b4d' stroke='%23e8b04b' stroke-width='2'/%3E%3Ccircle cx='150' cy='115' r='30' fill='none' stroke='%23e8b04b' stroke-width='3'/%3E%3Ccircle cx='150' cy='115' r='12' fill='%23e8b04b'/%3E%3Cpath d='M250 60h160v110H250z' fill='%23334a61' stroke='%23c0563a' stroke-width='2'/%3E%3Cg stroke='%23c0563a' stroke-width='2'%3E%3Cpath d='M270 100h120M270 125h90M270 150h60'/%3E%3C/g%3E%3Cpath d='M60 230h360' stroke='%23e8b04b' stroke-width='2' opacity='.6'/%3E%3C/svg%3E" alt="摄影师调试稳定器与收音设备的创作幕后工作台封面">
+            <span class="cz-vcard-tag">创作幕后</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>步行长镜头怎么稳住？我们的三件套清单</h3>
+            <p>稳定器、领夹麦、备用电池，还有一双不赶时间的鞋。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#e8b04b;color:#18222e">器</span><span>器材备忘组</span><span>·</span><span>1.3 万</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 692</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard" data-cz-cat="skill">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e9eef0'/%3E%3Crect x='60' y='40' width='360' height='190' rx='8' fill='%23ffffff' stroke='%235c6f80' stroke-width='2'/%3E%3Cg stroke='%23c0563a' stroke-width='3' fill='none'%3E%3Cpath d='M90 200q60-90 120-30t140-60'/%3E%3C/g%3E%3Cg fill='%234d6175'%3E%3Ccircle cx='90' cy='200' r='6'/%3E%3Ccircle cx='210' cy='170' r='6'/%3E%3Ccircle cx='350' cy='110' r='6'/%3E%3C/g%3E%3Cpath d='M90 80h120M90 105h80' stroke='%23b7c3cb' stroke-width='6'/%3E%3C/svg%3E" alt="街头影像构图与光线走向示意图教学封面">
+            <span class="cz-vcard-tag">实用技巧</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>逆光街景怎么拍才不糊：五个现场判断</h3>
+            <p>先测墙面，再决定人是剪影还是主角。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#5c6f80">光</span><span>光线笔记</span><span>·</span><span>1.1 万</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 531</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-share="逆光街景怎么拍才不糊"><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard" data-cz-cat="city">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23cfdae0'/%3E%3Cpath d='M0 210h480v60H0z' fill='%238fa3af'/%3E%3Cpath d='M0 120h480' stroke='%235c6f80' stroke-width='2'/%3E%3Cg stroke='%23334a61' stroke-width='3' fill='none'%3E%3Cpath d='M40 210v-90h90v90'/%3E%3Cpath d='M160 210v-60h70v60'/%3E%3Cpath d='M260 210v-110h90v110'/%3E%3Cpath d='M380 210v-70h70v70'/%3E%3C/g%3E%3Cpath d='M0 210h480' stroke='%23c0563a' stroke-width='4'/%3E%3C/svg%3E" alt="布尔诺火车站月台人流与站台广播记录封面">
+            <span class="cz-vcard-tag">城市探索</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>在布尔诺火车站坐满一小时，我拍到了什么</h3>
+            <p>月台是城市里最诚实的告别与重逢现场。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#334a61">站</span><span>月台常驻</span><span>·</span><span>9800</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 468</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard" data-cz-cat="culture">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23efe3cc'/%3E%3Cg fill='%23a8563c'%3E%3Crect x='60' y='80' width='40' height='130' rx='6'/%3E%3Crect x='120' y='60' width='40' height='150' rx='6'/%3E%3Crect x='180' y='100' width='40' height='110' rx='6'/%3E%3C/g%3E%3Cg fill='%235c6f80'%3E%3Crect x='250' y='70' width='40' height='140' rx='6'/%3E%3Crect x='310' y='95' width='40' height='115' rx='6'/%3E%3Crect x='370' y='55' width='40' height='155' rx='6'/%3E%3C/g%3E%3Cpath d='M50 220h380' stroke='%236b5c43' stroke-width='4'/%3E%3C/svg%3E" alt="周末农夫市集摊位上彩色玻璃罐与蜂蜜陈列封面">
+            <span class="cz-vcard-tag">在地文化</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>周末市集的蜂蜜摊主，讲了二十分钟蜜蜂</h3>
+            <p>他没看镜头，只看着罐子，像在介绍家里人。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#a8563c">集</span><span>市集散步者</span><span>·</span><span>8600</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 403</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-share="周末市集的蜂蜜摊主"><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard cz-hidden" data-cz-cat="behind">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23243243'/%3E%3Crect x='70' y='50' width='340' height='170' rx='8' fill='%2318222e' stroke='%23e8b04b' stroke-width='2'/%3E%3Cg stroke='%23e8b04b' stroke-width='2' opacity='.8'%3E%3Cpath d='M100 90h280M100 115h200M100 140h240M100 165h150'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Ccircle cx='100' cy='90' r='5'/%3E%3Ccircle cx='100' cy='115' r='5'/%3E%3Ccircle cx='100' cy='140' r='5'/%3E%3Ccircle cx='100' cy='165' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="剪辑时间线上分段音频轨道与字幕轨的工作界面封面">
+            <span class="cz-vcard-tag">创作幕后</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>把 4 小时素材剪成 9 分钟：我们的取舍表</h3>
+            <p>先保声音，再保动作，最后才看构图。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#e8b04b;color:#18222e">剪</span><span>后期值班室</span><span>·</span><span>1.2 万</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 607</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard cz-hidden" data-cz-cat="skill">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23eef1f2'/%3E%3Cg fill='%23e8b04b'%3E%3Crect x='50' y='150' width='40' height='80' rx='4'/%3E%3Crect x='110' y='120' width='40' height='110' rx='4'/%3E%3Crect x='170' y='90' width='40' height='140' rx='4'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Crect x='230' y='140' width='40' height='90' rx='4'/%3E%3Crect x='290' y='100' width='40' height='130' rx='4'/%3E%3Crect x='350' y='60' width='40' height='170' rx='4'/%3E%3C/g%3E%3Cpath d='M40 240h400' stroke='%235c6f80' stroke-width='3'/%3E%3C/svg%3E" alt="街头人流热度柱状分析图与拍摄时段建议封面">
+            <span class="cz-vcard-tag">实用技巧</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>一天里哪三个时段最适合拍街巷</h3>
+            <p>用一周的人流计数，换一张更省时间的表。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#e8b04b;color:#18222e">时</span><span>时段研究小组</span><span>·</span><span>7400</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 352</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-share="一天里哪三个时段最适合拍街巷"><span>分享</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cz-vcard cz-hidden" data-cz-cat="city">
+          <div class="cz-vcard-media">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23d9e3e6'/%3E%3Cpath d='M0 170h480v100H0z' fill='%23a8bcc4'/%3E%3Cpath d='M0 170q120-40 240-6t240-10' stroke='%235c6f80' stroke-width='3' fill='none'/%3E%3Cg stroke='%23334a61' stroke-width='3' fill='none'%3E%3Cpath d='M90 170v-60h80v60'/%3E%3Cpath d='M220 170v-40h60v40'/%3E%3Cpath d='M320 170v-75h70v75'/%3E%3C/g%3E%3Ccircle cx='400' cy='50' r='26' fill='%23e8b04b'/%3E%3C/svg%3E" alt="伏尔塔瓦河岸傍晚散步人群与桥影封面">
+            <span class="cz-vcard-tag">城市探索</span>
+          </div>
+          <div class="cz-vcard-body">
+            <h3>沿河走完五公里，我数到了十九种笑声</h3>
+            <p>河岸的傍晚属于慢跑的人、遛狗的人和发呆的人。</p>
+            <div class="cz-vcard-meta"><span class="cz-avatar" style="background:#4d6175">岸</span><span>散步路线组</span><span>·</span><span>6900</span></div>
+            <div class="cz-vcard-acts">
+              <button class="cz-ico-btn" type="button" data-cz-like="1"><span>赞 311</span></button>
+              <button class="cz-ico-btn" type="button" data-cz-fav="1"><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="cz-section cz-section-alt" id="cz-topics" aria-labelledby="cz-topics-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Series · 专题企划</div>
+          <h2 id="cz-topics-title">捷克街头系列51 正在进行的四个专题</h2>
+          <p>每个专题持续数周，开放投稿与联合展映，欢迎报名参与。</p>
+        </div>
+      </div>
+      <div class="cz-topic-list">
+        <article class="cz-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%2318222e'/%3E%3Cg stroke='%23e8b04b' stroke-width='2.4' fill='none' opacity='.9'%3E%3Cpath d='M40 200l40-140 40 140'/%3E%3Cpath d='M160 200V60h80v140'/%3E%3Cpath d='M280 200l30-100 30 100'/%3E%3C/g%3E%3Ccircle cx='340' cy='60' r='18' fill='%23c0563a'/%3E%3C/svg%3E" alt="石巷与电车专题中轨道与老建筑剪影封面">
+          <div class="cz-topic-body">
+            <span class="cz-topic-state">更新中 · 第 3 期</span>
+            <h3>石巷与电车</h3>
+            <p>以轨道为线索，串起布拉格十二处老街区，记录电车经过时街道的短暂停顿。</p>
+          </div>
+        </article>
+        <article class="cz-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%232b3b4d'/%3E%3Cg fill='%23e8b04b' opacity='.9'%3E%3Crect x='40' y='120' width='24' height='80'/%3E%3Crect x='80' y='90' width='24' height='110'/%3E%3Crect x='120' y='140' width='24' height='60'/%3E%3Crect x='160' y='70' width='24' height='130'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Crect x='210' y='110' width='24' height='90'/%3E%3Crect x='250' y='80' width='24' height='120'/%3E%3Crect x='290' y='130' width='24' height='70'/%3E%3Crect x='330' y='60' width='24' height='140'/%3E%3C/g%3E%3C/svg%3E" alt="声景地图专题中不同高度声波柱形可视化封面">
+          <div class="cz-topic-body">
+            <span class="cz-topic-state">征集中 · 报名开放</span>
+            <h3>城市的六十种声音</h3>
+            <p>征集无配乐的环境声切片，从市集叫卖到教堂钟声，共同绘制一张可听的声景地图。</p>
+          </div>
+        </article>
+        <article class="cz-topic">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 240'%3E%3Crect width='400' height='240' fill='%23e8dcc6'/%3E%3Cg stroke='%23a8563c' stroke-width='3' fill='none'%3E%3Ccircle cx='200' cy='120' r='70'/%3E%3Cpath d='M200 50v140M130 120h140'/%3E%3C/g%3E%3Cg fill='%235c6f80'%3E%3Ccircle cx='200' cy='120' r='8'/%3E%3C/g%3E%3Cpath d='M40 210h320' stroke='%236b5c43' stroke-width='3'/%3E%3C/svg%3E" alt="创作者工作日起居与拍摄计划企划封面">
+          <div class="cz-topic-body">
+            <span class="cz-topic-state">已完结 · 可回看</span>
+            <h3>创作者的二十四小时</h3>
+            <p>跟随六位街头拍摄者过完一天，从选点到收工，呈现影像背后的时间成本。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="cz-section" id="cz-creators" aria-labelledby="cz-creators-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Creators · 创作者矩阵</div>
+          <h2 id="cz-creators-title">让捷克街头系列51 被看见的四位长期合作者</h2>
+          <p>点击卡片查看简介，他们在各自的街巷里保持稳定输出。</p>
+        </div>
+      </div>
+      <div class="cz-creators">
+        <article class="cz-creator" data-cz-author="伏尔塔瓦的低机位" data-cz-role="城市漫步 / 长镜头" tabindex="0">
+          <div class="cz-creator-top">
+            <span class="cz-avatar" style="background:#c0563a">伏</span>
+            <div><b>伏尔塔瓦的低机位</b><small>城市漫步 · 长镜头</small></div>
+          </div>
+          <p>坚持把机器放在腰部高度拍摄，认为观众应该用走路者的视线看街道。代表作《雨夜十四分钟》。</p>
+          <div class="cz-creator-stats"><span>作品 <b>86</b></span><span>关注 <b>2.4 万</b></span></div>
+        </article>
+        <article class="cz-creator" data-cz-author="石巷观察员" data-cz-role="在地文化 / 访谈" tabindex="0">
+          <div class="cz-creator-top">
+            <span class="cz-avatar" style="background:#4d6175">石</span>
+            <div><b>石巷观察员</b><small>在地文化 · 访谈</small></div>
+          </div>
+          <p>擅长与店主、手艺人聊天，把三十分钟的谈话压成三分钟，却保留所有语气词。</p>
+          <div class="cz-creator-stats"><span>作品 <b>54</b></span><span>关注 <b>1.7 万</b></span></div>
+        </article>
+        <article class="cz-creator" data-cz-author="凌晨四点的取景器" data-cz-role="城市探索 / 摄影" tabindex="0">
+          <div class="cz-creator-top">
+            <span class="cz-avatar" style="background:#e8b04b;color:#18222e">凌</span>
+            <div><b>凌晨四点的取景器</b><small>城市探索 · 摄影</small></div>
+          </div>
+          <p>只在日出前出门，专注拍摄城市尚未完全苏醒的半小时，色彩偏冷，节奏很慢。</p>
+          <div class="cz-creator-stats"><span>作品 <b>112</b></span><span>关注 <b>3.1 万</b></span></div>
+        </article>
+        <article class="cz-creator" data-cz-author="声景采集组" data-cz-role="现场收音 / 声音设计" tabindex="0">
+          <div class="cz-creator-top">
+            <span class="cz-avatar" style="background:#18222e;color:#e8b04b">声</span>
+            <div><b>声景采集组</b><small>现场收音 · 声音设计</small></div>
+          </div>
+          <p>三人小组，背着双声道麦克风穿城，主张“先听见一座城，再看见一座城”。</p>
+          <div class="cz-creator-stats"><span>作品 <b>67</b></span><span>关注 <b>1.2 万</b></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="cz-section cz-section-alt" id="cz-wall" aria-labelledby="cz-wall-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Wall · 用户作品墙</div>
+          <h2 id="cz-wall-title">来自社区的八帧：捷克街头系列51 影像墙</h2>
+          <p>每一帧都标注拍摄地与投稿者，欢迎上传你的街角。</p>
+        </div>
+        <button class="cz-btn cz-btn-primary" type="button" data-cz-submit="上传作品">上传作品</button>
+      </div>
+      <div class="cz-wall">
+        <figure class="cz-w-a"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 420'%3E%3Crect width='500' height='420' fill='%23e6d9c2'/%3E%3Crect x='60' y='80' width='380' height='260' fill='%23f6eddc' stroke='%23a8563c' stroke-width='3'/%3E%3Cpath d='M60 200h380' stroke='%23a8563c' stroke-width='2'/%3E%3Cg fill='%235c6f80'%3E%3Crect x='100' y='120' width='60' height='60'/%3E%3Crect x='200' y='120' width='60' height='60'/%3E%3Crect x='300' y='120' width='60' height='60'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Crect x='100' y='240' width='80' height='70'/%3E%3Crect x='220' y='240' width='80' height='70'/%3E%3Crect x='340' y='240' width='40' height='70'/%3E%3C/g%3E%3C/svg%3E" alt="布拉格老城橱窗陈列与彩色玻璃作品墙大图"><figcaption>布拉格老城 · 橱窗先生</figcaption></figure>
+        <figure class="cz-w-b"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%23cfdae0'/%3E%3Cpath d='M0 180h400v80H0z' fill='%239db3bd'/%3E%3Cg stroke='%23334a61' stroke-width='3' fill='none'%3E%3Cpath d='M70 180v-70h70v70'/%3E%3Cpath d='M170 180v-45h55v45'/%3E%3Cpath d='M250 180v-90h70v90'/%3E%3C/g%3E%3Ccircle cx='350' cy='55' r='26' fill='%23e8b04b'/%3E%3C/svg%3E" alt="河岸晨雾中的桥塔与游船作品墙中图"><figcaption>伏尔塔瓦河岸 · 桥上行人</figcaption></figure>
+        <figure class="cz-w-c"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%2318222e'/%3E%3Cg fill='%23e8b04b' opacity='.9'%3E%3Ccircle cx='80' cy='70' r='10'/%3E%3Ccircle cx='160' cy='110' r='14'/%3E%3Ccircle cx='240' cy='60' r='8'/%3E%3C/g%3E%3Cpath d='M20 190q70-40 140-6t140-20' stroke='%23c0563a' stroke-width='4' fill='none'/%3E%3C/svg%3E" alt="夜间街灯与轨道反光作品墙小图"><figcaption>布尔诺夜行 · 灯下</figcaption></figure>
+        <figure class="cz-w-d"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 420'%3E%3Crect width='320' height='420' fill='%23efe3cc'/%3E%3Cg fill='%23a8563c'%3E%3Crect x='50' y='80' width='50' height='260' rx='6'/%3E%3Crect x='130' y='50' width='50' height='290' rx='6'/%3E%3C/g%3E%3Cg fill='%235c6f80'%3E%3Crect x='210' y='110' width='50' height='230' rx='6'/%3E%3C/g%3E%3Cpath d='M30 340h260' stroke='%236b5c43' stroke-width='4'/%3E%3C/svg%3E" alt="市集彩罐竖构图作品墙中图"><figcaption>周末市集 · 罐与光</figcaption></figure>
+        <figure class="cz-w-e"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Crect width='500' height='400' fill='%232b3b4d'/%3E%3Crect x='50' y='60' width='400' height='280' rx='8' fill='%23111a23' stroke='%23e8b04b' stroke-width='2'/%3E%3Cg stroke='%23e8b04b' stroke-width='2' opacity='.75'%3E%3Cpath d='M80 110h340M80 150h260M80 190h300M80 230h200M80 270h280'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Ccircle cx='80' cy='110' r='6'/%3E%3Ccircle cx='80' cy='150' r='6'/%3E%3Ccircle cx='80' cy='190' r='6'/%3E%3Ccircle cx='80' cy='230' r='6'/%3E%3Ccircle cx='80' cy='270' r='6'/%3E%3C/g%3E%3C/svg%3E" alt="剪辑界面与时间线作品墙大图"><figcaption>后期值班室 · 取舍表</figcaption></figure>
+        <figure class="cz-w-f"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 260'%3E%3Crect width='480' height='260' fill='%23e9eef0'/%3E%3Cg stroke='%235c6f80' stroke-width='3' fill='none'%3E%3Cpath d='M60 200q80-100 160-40t200-70'/%3E%3C/g%3E%3Cg fill='%23c0563a'%3E%3Ccircle cx='60' cy='200' r='7'/%3E%3Ccircle cx='220' cy='160' r='7'/%3E%3Ccircle cx='420' cy='90' r='7'/%3E%3C/g%3E%3Cpath d='M60 60h140M60 85h100' stroke='%23b7c3cb' stroke-width='7'/%3E%3C/svg%3E" alt="构图示意手稿与光线笔记作品墙中图"><figcaption>光线笔记 · 逆光判断</figcaption></figure>
+        <figure class="cz-w-g"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23d9e3e6'/%3E%3Cpath d='M0 190h320v70H0z' fill='%23a8bcc4'/%3E%3Cpath d='M40 190v-70h60v70M130 190v-45h45v45M210 190v-85h60v85' stroke='%23334a61' stroke-width='3' fill='none'/%3E%3Ccircle cx='280' cy='50' r='22' fill='%23e8b04b'/%3E%3C/svg%3E" alt="清晨空街建筑轮廓作品墙小图"><figcaption>清晨六点四十 · 空街</figcaption></figure>
+        <figure class="cz-w-h"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%23f0e6d2'/%3E%3Cg fill='%23a8563c'%3E%3Ccircle cx='110' cy='100' r='34'/%3E%3Ccircle cx='200' cy='150' r='22'/%3E%3Ccircle cx='290' cy='90' r='28'/%3E%3C/g%3E%3Cg stroke='%235c6f80' stroke-width='3' fill='none'%3E%3Cpath d='M60 210h280'/%3E%3Cpath d='M90 190v40M200 190v40M310 190v40'/%3E%3C/g%3E%3C/svg%3E" alt="木偶工坊彩色染料与木料作品墙中图"><figcaption>木偶工坊 · 颜料盒</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事 + 榜单 -->
+  <section class="cz-section" id="cz-stories" aria-labelledby="cz-stories-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Notes & Ranking · 随笔与榜单</div>
+          <h2 id="cz-stories-title">编辑手记与本周口碑榜</h2>
+          <p>影像之外，我们也记录拍摄现场的想法与人情。</p>
+        </div>
+      </div>
+
+      <div class="cz-story-grid" style="margin-bottom:34px">
+        <article class="cz-story">
+          <small>编辑手记 · 11-18</small>
+          <h3>为什么我们坚持保留电车经过时的杂音</h3>
+          <p>很多投稿者会问，能不能把环境音压掉、换成配乐。我们通常建议保留原声，因为那几秒的杂音里，藏着这条街的密度：轨道的摩擦、行人的让路、司机短促的鸣笛。删掉它，画面会变干净，但城市会变薄。</p>
+          <a href="#cz-focus">阅读焦点影像</a>
+        </article>
+        <article class="cz-story">
+          <small>拍摄现场 · 11-15</small>
+          <h3>在雨里等四十分钟，只为一个人过街</h3>
+          <p>那次拍摄下着小雨，我们想记录一条湿滑石巷的反光。四十分钟里经过二十七个人，最终选中的是一位提着面包袋的老人。他走得慢，正好把整条巷子的长度走完。这就是我们常说的“等待型镜头”。</p>
+          <a href="#cz-videos">查看同类影像</a>
+        </article>
+        <article class="cz-story">
+          <small>社区来信 · 11-12</small>
+          <h3>一位读者说，他因为我们的视频去了布尔诺</h3>
+          <p>他写来一封长信，说自己在出差间隙按照我们视频里的路线走了两小时，发现街角那家钟表店还开着。这封信让我们确认：街头影像的价值不只是观看，它还能成为一条真实可走的路线。</p>
+          <a href="#cz-wall">浏览作品墙</a>
+        </article>
+      </div>
+
+      <div class="cz-rank" role="table" aria-label="本周口碑榜">
+        <div class="cz-rank-row" role="row"><span class="cz-rank-no">01</span><b>从查理桥到小城区：一段 14 分钟的雨夜步行</b><span>口碑 9.6</span></div>
+        <div class="cz-rank-row" role="row"><span class="cz-rank-no">02</span><b>木偶工坊里的第七代手艺人与他的颜料盒</b><span>口碑 9.4</span></div>
+        <div class="cz-rank-row" role="row"><span class="cz-rank-no">03</span><b>早上六点四十的老城广场，只有鸽子和送货车</b><span>口碑 9.3</span></div>
+        <div class="cz-rank-row" role="row"><span class="cz-rank-no">04</span><b>布尔诺地下街区的 60 秒环境声</b><span>口碑 9.1</span></div>
+        <div class="cz-rank-row" role="row"><span class="cz-rank-no">05</span><b>在布尔诺火车站坐满一小时，我拍到了什么</b><span>口碑 8.9</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 -->
+  <section class="cz-section cz-section-alt" id="cz-reviews" aria-labelledby="cz-reviews-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Voices · 用户评价</div>
+          <h2 id="cz-reviews-title">观众怎么说捷克街头系列51</h2>
+          <p>来自不同观看习惯的真实反馈，我们保留原话。</p>
+        </div>
+      </div>
+      <div class="cz-reviews">
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#c0563a">林</span><div><b>林间慢速</b><small>观看 1 年</small></div></div><div class="cz-stars">★★★★★</div><p>最喜欢的是声音。现在很多城市视频都在配罐头音乐，这里能听见风、听见脚步，像是在现场站着。</p></div>
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#4d6175">周</span><div><b>周末不加班</b><small>观看 8 个月</small></div></div><div class="cz-stars">★★★★★</div><p>专题企划的路线图很实用。我照着走了一次，虽然没拍出片，但真的逛到了几家没在攻略里出现的小店。</p></div>
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#e8b04b;color:#18222e">陈</span><div><b>陈小满</b><small>投稿作者</small></div></div><div class="cz-stars">★★★★☆</div><p>投稿后的反馈超出预期，编辑逐条回复了收音和字幕的问题，还给了下一期的拍摄建议，比很多平台认真。</p></div>
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#18222e;color:#e8b04b">许</span><div><b>许一半</b><small>观看 2 年</small></div></div><div class="cz-stars">★★★★★</div><p>画面不花哨，但耐看。我常常在通勤路上开着听，像有人替我走过那些没去过的街道。</p></div>
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#a8563c">吴</span><div><b>吴小楼</b><small>摄影爱好者</small></div></div><div class="cz-stars">★★★★☆</div><p>器材清单那期很实用，不过如果能补一份移动时的收音对比就更好了，期待后续。</p></div>
+        <div class="cz-review"><div class="cz-review-head"><span class="cz-avatar" style="background:#5c6f80">沈</span><div><b>沈三三</b><small>观看 5 个月</small></div></div><div class="cz-stars">★★★★★</div><p>界面干净，想找什么直接筛选标签就行。最喜欢的是每段视频下面都标了拍摄地，这点很贴心。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 合作 -->
+  <section class="cz-section cz-section-ink" id="cz-updates" aria-labelledby="cz-updates-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Newsroom · 企业动态</div>
+          <h2 id="cz-updates-title">官方发布与更新日志</h2>
+          <p>内容上新、企划进度与社区规则调整，均在此同步。</p>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:44px" class="cz-updates-grid">
+        <div class="cz-timeline">
+          <div class="cz-tl-item">
+            <time>2026-11-18</time>
+            <h3>「石巷与电车」第三期上线，新增四处取景地</h3>
+            <p>本期补充了小城区与城堡阶梯之间的两段步行影像，并公开了拍摄时段建议与收音参数。</p>
+          </div>
+          <div class="cz-tl-item">
+            <time>2026-11-16</time>
+            <h3>专题企划「城市的六十种声音」报名通道开启</h3>
+            <p>面向所有创作者征集无配乐环境声切片，入选作品将参与季度线上展映，并获得编辑推荐位。</p>
+          </div>
+          <div class="cz-tl-item">
+            <time>2026-11-12</time>
+            <h3>投稿规范更新：新增版权与肖像授权说明</h3>
+            <p>为保障作者与被拍摄者权益，投稿页面补充了授权文件清单，审核周期同步缩短至三个工作日。</p>
+          </div>
+          <div class="cz-tl-item">
+            <time>2026-11-08</time>
+            <h3>官网影像档案库完成检索升级</h3>
+            <p>支持按城市、街巷、时间与主题四维筛选，历史作品可按拍摄年份连续浏览，检索速度明显提升。</p>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-family:var(--cz-serif);font-size:1.15rem;margin-bottom:14px;color:#e9e2d6">合作与共创伙伴</h3>
+          <div class="cz-partners" style="margin-bottom:26px">
+            <div class="cz-partner">老城影像社<small>CONTENT PARTNER</small></div>
+            <div class="cz-partner">布尔诺独立影展<small>FESTIVAL</small></div>
+            <div class="cz-partner">伏尔塔瓦声音工作室<small>AUDIO LAB</small></div>
+            <div class="cz-partner">中欧城市档案计划<small>ARCHIVE</small></div>
+            <div class="cz-partner">手作与器物观察<small>MEDIA</small></div>
+          </div>
+          <div style="background:rgba(232,176,75,.12);border:1px solid rgba(232,176,75,.3);border-radius:12px;padding:18px">
+            <h3 style="font-family:var(--cz-serif);font-size:1rem;color:var(--cz-amber);margin-bottom:6px">创作灵感工具</h3>
+            <p style="font-size:.86rem;color:#b9c6d3;line-height:1.8">输入你的拍摄地点与天气，我们给出三个标题建议与两条剪辑思路。工具仅作为辅助，最终判断仍交给在场的你。</p>
+            <button class="cz-btn cz-btn-amber" type="button" style="margin-top:12px" data-cz-submit="获取创作灵感">获取灵感</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系 -->
+  <section class="cz-section" id="cz-faq" aria-labelledby="cz-faq-title">
+    <div class="cz-wrap">
+      <div class="cz-sec-head">
+        <div class="cz-sec-head-l">
+          <div class="cz-sec-kicker">Help · 帮助中心</div>
+          <h2 id="cz-faq-title">关于捷克街头系列51 的常见问题</h2>
+          <p>投稿、版权、内容更新与观看相关问题，均在此说明。</p>
+        </div>
+      </div>
+      <div class="cz-faq">
+        <details open>
+          <summary>如何向捷克街头系列51 投稿？</summary>
+          <p>点击页面中的“投稿入口”，填写作品名称、拍摄地点、拍摄时间与素材说明，并附上原始文件链接。我们不接受二次搬运或未获授权的素材，审核周期通常为三个工作日。</p>
+        </details>
+        <details>
+          <summary>品牌对视频时长和画幅有要求吗？</summary>
+          <p>长镜头建议 5 至 20 分钟，声景切片建议 30 秒至 3 分钟，画幅优先 16:9。若为竖屏手机素材，请在说明中注明，编辑会评估是否适合放入作品墙栏目。</p>
+        </details>
+        <details>
+          <summary>投稿后版权归谁？</summary>
+          <p>作品著作权归创作者所有。品牌在获得作者授权后，拥有在官网及官方账号进行展示、推荐与专题收录的权利，不涉及商业转售。作者可随时申请下架。</p>
+        </details>
+        <details>
+          <summary>官网的内容更新频率是怎样的？</summary>
+          <p>保持每周两次的内容更新，其中一次为焦点影像，一次为社区投稿精选。专题企划按项目周期推进，进度会在企业动态中同步。</p>
+        </details>
+        <details>
+          <summary>视频里出现路人，需要注意什么？</summary>
+          <p>请尽量避免对个体进行长时间特写或可识别肖像的商用使用。若画面中以某位路人为主要叙事对象，请取得口头或书面同意，并在投稿时说明。</p>
+        </details>
+        <details>
+          <summary>可以申请合作或联合企划吗？</summary>
+          <p>欢迎。请在联系表单中说明机构名称、合作方向与时间安排，品牌会在五个工作日内回复。我们更倾向与在地文化、独立影像、声音艺术相关的项目合作。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 CTA -->
+  <section class="cz-section" id="cz-contact" aria-labelledby="cz-contact-title" style="padding-top:0">
+    <div class="cz-wrap">
+      <div class="cz-cta">
+        <div>
+          <h2 id="cz-contact-title">把你的街角，交给捷克街头系列51</h2>
+          <p>无论是三分钟的声景，还是十四分钟的步行，只要它真实、有细节、值得被看见，我们都愿意认真看完。品牌官网持续接收投稿与共创提案。</p>
+          <div class="cz-cta-actions">
+            <button class="cz-btn cz-btn-primary" type="button" data-cz-submit="提交投稿">提交投稿</button>
+            <button class="cz-btn cz-btn-amber" type="button" data-cz-share="捷克街头系列51 官方网站">复制分享链接</button>
+            <a class="cz-btn cz-btn-ghost" href="#cz-faq">查看投稿说明</a>
+          </div>
+        </div>
+        <div class="cz-cta-info">
+          <div><b>合作邮箱</b><span>studio@streetcz51.example</span></div>
+          <div><b>投稿时段</b><span>每周一至周五 10:00–18:00 受理</span></div>
+          <div><b>办公坐标</b><span>布拉格老城 · 影像编辑室</span></div>
+          <div><b>社区规则</b><span>作者署名 · 版权清晰 · 不打扰被拍摄者</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="cz-footer">
+  <div class="cz-wrap">
+    <div class="cz-footer-top">
+      <div class="cz-footer-brand">
+        <strong>捷克街头系列51</strong>
+        <p>城市街头影像原创视频品牌，深耕中欧在地文化与日常记录。作为值得信赖的内容平台，我们持续运营影像档案库、创作者社区与专题企划，坚持以真实、专业与匠心呈现每一段街道。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#cz-focus">焦点影像</a></li>
+          <li><a href="#cz-videos">热门视频流</a></li>
+          <li><a href="#cz-topics">专题企划</a></li>
+          <li><a href="#cz-wall">作品墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌</h4>
+        <ul>
+          <li><a href="#cz-about-anchor">品牌故事</a></li>
+          <li><a href="#cz-creators">创作者矩阵</a></li>
+          <li><a href="#cz-updates">企业动态</a></li>
+          <li><a href="#cz-reviews">用户评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持</h4>
+        <ul>
+          <li><a href="#cz-faq">常见问题</a></li>
+          <li><a href="#cz-contact">合作联系</a></li>
+          <li><a href="#cz-contact">投稿入口</a></li>
+          <li><a href="#cz-top-anchor">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cz-footer-bottom">
+      <div>
+        <span>捷克街头系列51 官方网站</span>
+        <span>版权所有 © 2026</span>
+        <span>备案号：影备 2026-051 号</span>
+      </div>
+      <div><span>持续运营中 · 原创正版内容</span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="cz-top" id="cz-top-btn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div class="cz-toast" id="cz-toast" role="status" aria-live="polite"></div>
+
+<div class="cz-modal" id="cz-modal" role="dialog" aria-modal="true" aria-labelledby="cz-modal-title">
+  <div class="cz-modal-card">
+    <button class="cz-modal-close" id="cz-modal-close" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="cz-modal-title">提示</h3>
+    <p id="cz-modal-desc"></p>
+    <div id="cz-modal-body"></div>
+    <div class="cz-share-row" id="cz-share-row" style="display:none">
+      <button type="button" data-cz-channel="微信">微信</button>
+      <button type="button" data-cz-channel="微博">微博</button>
+      <button type="button" data-cz-channel="QQ">QQ</button>
+      <button type="button" data-cz-channel="邮件">邮件</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastTimer = null;
+  function toast(msg){
+    var t = document.getElementById('cz-toast');
+    t.textContent = msg;
+    t.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var navToggle = document.getElementById('cz-nav-toggle');
+  var nav = document.getElementById('cz-main-nav');
+  navToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 780){
+      nav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded','false');
+    }
+  });
+  document.querySelectorAll('.cz-nav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      document.querySelectorAll('.cz-nav a').forEach(function(x){ x.classList.remove('is-current'); });
+      a.classList.add('is-current');
+    });
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('cz-search-input');
+  var searchHint = document.getElementById('cz-search-hint');
+  var searchBtn = document.getElementById('cz-search-btn');
+  var keywords = ['布拉格','老城','电车','声景','木偶','市集','布尔诺','河岸','长镜头','创作者','专题','投稿'];
+
+  function doSearch(){
+    var v = searchInput.value.trim();
+    if(!v){
+      searchHint.innerHTML = '试试搜索：<b>布拉格</b>、<b>声景</b>、<b>木偶</b> 或创作者昵称。';
+      searchHint.classList.add('is-open');
+      return;
+    }
+    var hit = keywords.filter(function(k){ return v.indexOf(k) > -1 || k.indexOf(v) > -1; });
+    if(hit.length){
+      searchHint.innerHTML = '匹配到相关标签：<b>' + hit.join('、') + '</b>，已为你高亮对应视频分类。';
+      var map = { '布拉格':'city','老城':'city','电车':'city','布尔格':'city','声景':'culture','木偶':'culture','市集':'culture','河岸':'city','长镜头':'behind','创作者':'behind','专题':'behind','投稿':'skill','布尔诺':'city' };
+      var cat = null;
+      hit.forEach(function(k){ if(map[k]) cat = map[k]; });
+      if(cat){
+        document.querySelectorAll('.cz-chip').forEach(function(c){ c.classList.toggle('is-on', c.getAttribute('data-cz-filter') === cat); });
+        applyFilter(cat);
+      }
+    }else{
+      searchHint.innerHTML = '暂未找到「<b>' + v.replace(/[<>&]/g,'') + '</b>」相关标签，可浏览下方全部内容，或换个关键词试试。';
+    }
+    searchHint.classList.add('is-open');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSearch(); } });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ searchHint.classList.remove('is-open'); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.cz-search')){ searchHint.classList.remove('is-open'); }
+  });
+
+  /* 标签筛选 */
+  function applyFilter(cat){
+    document.querySelectorAll('#cz-video-grid .cz-vcard').forEach(function(card){
+      var c = card.getAttribute('data-cz-cat');
+      card.classList.toggle('cz-hidden', !(cat === 'all' || c === cat));
+    });
+  }
+  document.getElementById('cz-filter-row').addEventListener('click', function(e){
+    var btn = e.target.closest('.cz-chip');
+    if(!btn) return;
+    document.querySelectorAll('.cz-chip').forEach(function(c){ c.classList.remove('is-on'); });
+    btn.classList.add('is-on');
+    applyFilter(btn.getAttribute('data-cz-filter'));
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-cz-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var active = likeBtn.classList.toggle('is-active');
+      var num = parseInt((span.textContent || '').replace(/[^\d]/g,''), 10) || 0;
+      span.textContent = '赞 ' + (active ? num + 1 : Math.max(0, num - 1));
+      toast(active ? '已点赞这段街头影像' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-cz-fav]');
+    if(favBtn){
+      var on = favBtn.classList.toggle('is-active');
+      var sp = favBtn.querySelector('span');
+      if(sp) sp.textContent = on ? '已收藏' : '收藏';
+      toast(on ? '已加入收藏，可在社区中心查看' : '已取消收藏');
+      return;
+    }
+  });
+
+  /* 评论弹窗 */
+  function openComment(title){
+    openModal('评论 · ' + title, '留下你对这段影像的看法，编辑会挑选优质评论置顶。', 
+      '<textarea rows="4" placeholder="写下你的评论…"></textarea><button class="cz-btn cz-btn-primary" type="button" id="cz-comment-send">发布评论</button>');
+    var send = document.getElementById('cz-comment-send');
+    if(send){
+      send.addEventListener('click', function(){
+        closeModal();
+        toast('评论已提交，审核通过后展示');
+      });
+    }
+  }
+  document.addEventListener('click', function(e){
+    var c = e.target.closest('[data-cz-comment]');
+    if(c){ openComment(c.getAttribute('data-cz-comment')); }
+  });
+
+  /* 模态 */
+  var modal = document.getElementById('cz-modal');
+  var modalTitle = document.getElementById('cz-modal-title');
+  var modalDesc = document.getElementById('cz-modal-desc');
+  var modalBody = document.getElementById('cz-modal-body');
+  var shareRow = document.getElementById('cz-share-row');
+  var lastFocus = null;
+
+  function openModal(title, desc, bodyHtml, showShare){
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc || '';
+    modalBody.innerHTML = bodyHtml || '';
+    shareRow.style.display = showShare ? 'flex' : 'none';
+    modal.classList.add('is-open');
+    var first = modal.querySelector('input, textarea, button.cz-btn');
+    if(first) first.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.getElementById('cz-modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+
+  /* 复制链接 + 分享 */
+  function copyLink(){
+    var url = window.location.href.split('#')[0];
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        toast('链接已复制，欢迎分享给同好');
+      }).catch(function(){
+        toast('复制失败，请手动复制浏览器地址栏链接');
+      });
+    }else{
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); toast('链接已复制，欢迎分享给同好'); }
+      catch(err){ toast('复制失败，请手动复制浏览器地址栏链接'); }
+      document.body.removeChild(ta);
+    }
+  }
+
+  document.addEventListener('click', function(e){
+    var s = e.target.closest('[data-cz-share]');
+    if(s){
+      var name = s.getAttribute('data-cz-share');
+      openModal('分享 · ' + name, '把这段街头影像分享给愿意一起走路的人。', 
+        '<button class="cz-btn cz-btn-primary" type="button" id="cz-copy-btn">复制页面链接</button>', true);
+      var cb = document.getElementById('cz-copy-btn');
+      if(cb){
+        cb.addEventListener('click', copyLink);
+      }
+      return;
+    }
+    var ch = e.target.closest('[data-cz-channel]');
+    if(ch){
+      closeModal();
+      toast('已生成' + ch.getAttribute('data-cz-channel') + '分享卡片，可在对应应用中粘贴');
+      return;
+    }
+  });
+
+  /* 投稿弹窗 */
+  document.addEventListener('click', function(e){
+    var sub = e.target.closest('[data-cz-submit]');
+    if(sub){
+      var label = sub.getAttribute('data-cz-submit');
+      var html = '';
+      if(label === '获取创作灵感'){
+        var ideas = [
+          '标题建议：《老城清晨的第七块石板》《电车经过时，街道安静了四秒》《雨停之前，我先走完这条巷子》',
+          '剪辑思路：先用环境声开场二十秒再出画面；中段保留一次完整的长镜头，不做切分。'
+        ];
+        openModal(label, ideas.join(' '), '<button class="cz-btn cz-btn-primary" type="button" id="cz-idea-ok">知道了</button>');
+        var ok = document.getElementById('cz-idea-ok');
+        if(ok) ok.addEventListener('click', closeModal);
+        return;
+      }
+      html = '<input type="text" placeholder="作品名称" aria-label="作品名称">' +
+             '<input type="text" placeholder="拍摄地点与时间" aria-label="拍摄地点与时间">' +
+             '<textarea rows="4" placeholder="简要说明素材内容、时长与收音方式" aria-label="素材说明"></textarea>' +
+             '<button class="cz-btn cz-btn-primary" type="button" id="cz-submit-send">提交</button>';
+      openModal(label, '品牌编辑将在三个工作日内查看，请确保素材为原创且版权清晰。', html);
+      var send = document.getElementById('cz-submit-send');
+      if(send){
+        send.addEventListener('click', function(){
+          closeModal();
+          toast('投稿已提交，感谢你记录这座城市');
+        });
+      }
+    }
+  });
+
+  /* 作者信息弹窗 */
+  document.querySelectorAll('.cz-creator').forEach(function(card){
+    function show(){
+      var name = card.getAttribute('data-cz-author');
+      var role = card.getAttribute('data-cz-role');
+      var p = card.querySelector('p').textContent;
+      var stats = card.querySelector('.cz-creator-stats').textContent;
+      openModal(name, role, '<p style="font-size:.88rem;color:#4a5a6b">' + p + '</p><p style="font-size:.82rem;color:#8a96a3">' + stats + '</p>');
+    }
+    card.addEventListener('click', show);
+    card.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); show(); } });
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('cz-top-btn');
+  window.addEventListener('scroll', function(){
+    topBtn.classList.toggle('is-show', window.scrollY > 520);
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    var stats = document.querySelectorAll('[data-cz-count]');
+    if(!stats.length) return;
+    var trigger = document.querySelector('.cz-hero-stats');
+    if(!trigger) return;
+    var rect = trigger.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      counted = true;
+      stats.forEach(function(el){
+        var target = parseInt(el.getAttribute('data-cz-count'), 10);
+        var start = 0;
+        var step = Math.max(1, Math.floor(target / 40));
+        var timer = setInterval(function(){
+          start += step;
+          if(start >= target){ start = target; clearInterval(timer); }
+          el.textContent = start;
+        }, 28);
+      });
+    }
+  }
+  window.addEventListener('scroll', runCount, {passive:true});
+  window.addEventListener('resize', runCount);
+  runCount();
+
+  /* anchor 偏移已通过 CSS scroll-padding-top 处理 */
+})();
+</script>
+</body>
+  </html>
